@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 
 <head>
-  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
   <title>Coming soon - Boulderbloc</title>
-  <meta charset="UTF-8">
-  <meta name="description" content="Bouderbloc als spielplatz">
-  <meta name="keywords" content="Boulder, Boulderbloc, Gemeinde spielplatz">
-  <meta name="author" content="Boulderbloc Gmbh @Muster Jan">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="description" content="Bouderbloc als spielplatz" />
+  <meta name="keywords" content="Boulder, Boulderbloc, Gemeinde spielplatz" />
+  <meta name="author" content="Boulderbloc Gmbh @Muster Jan" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         backgroundImage: {
-          hero:
-            "url('https://html.creativegigstf.com/vCamp/vCamp/images/assets/bg_01.png')",
+          hero: "url('https://html.creativegigstf.com/vCamp/vCamp/images/assets/bg_01.png')",
         },
         extend: {
           animation: {
@@ -57,34 +56,60 @@
           },
         },
       },
-    }
+    };
   </script>
 </head>
 
 <body>
-  <div class="overflow-hidden relative min-h-screen flex flex-col justify-center items-center bg-hero bg-cover">
-      <img src="assets/Robo_PC_bottom.svg" alt="PC_Robo"
-      class="absolute h-96 bottom-11 -left-5 animate-blob" />
-    <img src="assets/Holds_4.svg" alt="hero" class="absolute w-full left-24 bottom-24 animate-blob2" />
-    <div class="relative z-10 py-6 space-y-16 lg:space-y-32 text-gray-900">
+  <div
+    class="overflow-hidden relative min-h-screen flex flex-col justify-center items-center bg-hero bg-cover"
+  >
+    <!-- robot using laptop image -->
+    <img
+      src="assets/robo.svg"
+      alt="PC_Robo"
+      class="hidden sm:block absolute h-96 bottom-11 -left-5 animate-blob"
+    />
+    <!-- holds in the background -->
+    <img
+      src="assets/holds.svg"
+      alt="hero"
+      class="hidden sm:block absolute w-full left-24 bottom-24 animate-blob2"
+    />
+    <!-- holds in the background vertical for mobile -->
+    <img
+      src="assets/holds-vertical.svg"
+      alt="hero"
+      class="absolute sm:hidden w-full animate-blob2"
+    />
+
+    <div
+      class="relative z-10 py-6 px-10 space-y-16 lg:space-y-32 text-gray-900"
+    >
       <div class="text-center space-y-10">
-        <h3 class="font-light text-xl uppercase tracking-wider">
-          Coming soon
-        </h3> 
+        <h3 class="font-light text-xl uppercase tracking-wider">Coming soon</h3>
         <h1 class="text-7xl lg:text-9xl font-extrabold">Wir si am Schrùube</h1>
-        <p class="text-xl lg:text-2xl tracking-wide mx-10 lg:max-w-xl lg:mx-auto">
-          Asch nume ah Frag vo de Ziit bis näbscht de Websita oh de erscht Block stìit!!
+        <p
+          class="text-xl lg:text-2xl tracking-wide mx-10 lg:max-w-xl lg:mx-auto"
+        >
+          Asch nume ah Frag vo de Ziit bis näbscht de Websita oh de erscht Block
+          stìit!!
         </p>
       </div>
       <form class="relative z-10 max-w-lg mx-auto">
         <div
-          class="w-full text-2xl font-light text-gray-900 placeholder-gray-500 py-5 pl-5 rounded-xl" >info@boulderbloc.ch</div>
-          <a href="mailto:info@boulderbloc.ch">
-            <button type="button"
-            class="absolute top-1 right-1 bottom-1 px-4 lg:px-10 text-xl font-semibold bg-gray-900 text-white rounded-xl transition ease-in-out duration-500 hover:bg-red-500">
-            schrìib üs doch
+          class="w-full text-2xl font-light text-gray-900 placeholder-gray-500 py-5 pl-5 rounded-xl"
+        >
+          info@boulderbloc.ch
+        </div>
+        <a href="mailto:info@boulderbloc.ch">
+          <button
+            type="button"
+            class="absolute top-1 right-1 bottom-1 px-5 lg:px-5 text-xl font-semibold bg-gray-900 text-white rounded-xl transition ease-in-out duration-500 hover:bg-red-500"
+          >
+            <img src="assets/send.svg" class="h-7 w-7" />
           </button>
-          </a>  
+        </a>
       </form>
     </div>
   </div>
